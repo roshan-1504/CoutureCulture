@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="cardscript.js"></script>
+    <script src="cart.js"></script>
+    <!-- <script src="cart.js"></script> -->
+    <title>Couture Culture</title>
+
+    <style>
+        .add-to-cart-btn {
+            background-color: rgb(32, 28, 24); /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: rgb(64, 60, 56);
+        }
+
+        .cardcontainerjs {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cardcontainerjs h4 {
+            margin-bottom: 5px; /* Add some space between name and price */
+        }
+
+        .cardcontainerjs span {
+            margin-bottom: 10px; /* Add more space between price and button */
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <ul class="nav">
+            <li><a href="index2.html">Couture Culture</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="home.html">Home</a></li>
+            
+            <li>
+                <input type="text" class="search-bar" placeholder="Search for your wardrobe essentials here">
+                <!--<button class="search-button">Search</button> -->
+            </li>
+
+            <li><a href="wishlist.html">Wishlist</a></li>   
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </div>
+
+
+    <div class="slideshow-container">
+        <div class="slide"><img class="discounttop" src="dt1.png" alt="Slide 1"></div>
+        <div class="slide"><img class="discounttop" src="dt2.png" alt="Slide 2"></div>
+        <div class="slide"><img class="discounttop" src="dt3.png" alt="Slide 3"></div>
+        <div class="slide"><img class="discounttop" src="dt4.png" alt="Slide 4"></div>
+        <div class="slide"><img class="discounttop" src="dt5.png" alt="Slide 5"></div>
+
+        <div class="indicator-container">
+            <!--
+            <span class="indicator" onclick="currentSlide(1)"></span>
+            <span class="indicator" onclick="currentSlide(2)"></span> -->
+            <!-- Add more indicators as needed -->
+        </div>
+    </div>
+    
+
+    <!-- <img class="discounttop" src="discounttop.png"> -->
+    <div class="container">
+
+        <div class="card-container" id="cardContainer">
+            <!-- Cards will be dynamically generated here -->
+        </div>
+        
+        <br><br>
+
+    </div>
+    
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section contact">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:info@coutureculture.com" style="color:rgb(160, 147, 134);">info@coutureculture.com</a><br>Phone: 123-456-7890</p>
+            </div>
+
+            <div class="footer-section follow-us">
+                <h4>Follow Us</h4>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com"><img src="instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.twitter.com"><img src="twitter.png" alt="Twitter"></a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section newsletter">
+                <h4>Subscribe to Our Newsletter</h4>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <button type="submit" style="background-color: rgb(160, 147, 134);">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Couture Culture. All rights reserved.
+        </div>
+    </div>
+
+    <script>
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            const slides = document.getElementsByClassName("slide");
+            const indicatorsContainer = document.querySelector(".indicator-container");
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+
+            // Remove existing indicators
+            indicatorsContainer.innerHTML = "";
+
+            // Create indicators
+            for (i = 0; i < slides.length; i++) {
+                const indicator = document.createElement("span");
+                indicator.classList.add("indicator");
+                indicator.setAttribute("onclick", `currentSlide(${i + 1})`);
+                indicatorsContainer.appendChild(indicator);
+            }
+            // Add active class to current slide's indicator
+            const indicators = document.getElementsByClassName("indicator");
+            if (indicators.length > 0) {
+                indicators[slideIndex - 1].classList.add("active");
+            }
+        }
+
+        function autoSlide() {
+            plusSlides(1);
+            setTimeout(autoSlide, 3000); // Change slide every 3 seconds
+        }
+
+        // Start automatic sliding
+        autoSlide();
+    </script>    
+    
+
+
+</body>
+</html>
