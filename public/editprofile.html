@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="header">
+        <ul class="nav">
+            <!--
+            <li>
+                <input type="text" class="search-bar" placeholder="Search for your wardrobe essentials here">
+            </li> 
+        -->
+            <li class="partition"><a href="home.html">Home</a></li>
+            <!-- <li><a href="#">About</a></li> -->
+            <li><a href="FAQs2.html">FAQs</a></li>
+        </ul>
+    </div>
+
+<main class="profile-details">
+    <h3 class="font-weight-bold">EDIT PROFILE</h3>
+    <hr>
+    <br>
+    <div class="profile-info">
+        <form id="edit-profile-form">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="text" id="mobile" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="changepassword">Change Password</label>
+                <input type="password" id="changepassword" class="form-control" value="********">
+            </div>
+
+            <button type="submit" id="save-profile-btn" class="edit-button btn" aria-label="save button"  style="background-color:rgb(32, 28, 24);">SAVE</button>
+        </form>
+    </div>
+</main>
+
+<div class="footer">b
+    <div class="footer-content">
+        <div class="footer-section contact">
+            <h4>Contact Us</h4>
+            <p>Email:<a href="mailto:info@coutureculture.com" style="color:rgb(160, 147, 134);">info@coutureculture.com</a><br>Phone: 123-456-7890</p>
+        </div>
+        <!-- <div class="footer-section follow-us">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div> -->
+
+        <div class="footer-section follow-us">
+            <h4>Follow Us</h4>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com"><img src="instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://www.twitter.com"><img src="twitter.png" alt="Twitter"></a></li>
+            </ul>
+        </div>
+        
+        
+        
+
+        <div class="footer-section newsletter">
+            <h4>Subscribe to Our Newsletter</h4>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Enter your email">
+                <button type="submit" style="background-color: rgb(160, 147, 134);">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 Couture Culture. All rights reserved.
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#edit-profile-form').submit(function(event) {
+            event.preventDefault();
+
+            // Get the edited values
+            var fullName = $('#fullname').val();
+            var email = $('#email').val();
+            var mobile = $('#mobile').val();
+            var address = $('#address').val();
+            var password = $('#password').val();
+
+            // Update profile details in localStorage
+            var profileDetails = {
+                fullName: fullName,
+                email: email,
+                mobile: mobile,
+                address: address,
+                password: password
+            };
+            localStorage.setItem('profileDetails', JSON.stringify(profileDetails));
+
+            // Redirect back to profile.html
+            window.location.href = 'profile.html';
+        });
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        // Event handler for Get Started button
+        $("#getStartedButton").click(function() {
+            window.location.href = "vlogin2.html"; // Redirect to login page
+        });
+    });
+</script>
+</body>
+</html>

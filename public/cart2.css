@@ -1,0 +1,88 @@
+body {
+    background-color: #a09386;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+.heading h1 {
+    font-family: fantasy;
+    font-weight: 600;
+    text-align: center; /* Centering the heading */
+    margin: 20px 0;
+}
+
+.cart-container {
+    max-width: 800px;
+    margin: 0 auto; /* Centering the cart */
+    padding: 0 20px; /* Add padding to the sides */
+}
+
+.cart-item {
+    background-color: #fff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.item-image img {
+    width: 100px;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.item-details {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.item-details p {
+    margin: 5px 0;
+}
+
+.item-details button {
+    background-color:rgb(32, 28, 24);
+    color: #fff; 
+    border: none;
+    padding: 8px 12px;
+    margin-right: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.item-details button:hover {
+    background-color: rgb(160, 147, 134);
+}
+
+.item-details button:disabled {
+    background-color: #ccc; /* Grayed out for disabled buttons */
+    cursor: not-allowed;
+}
+
+.total-price {
+    font-family:serif;
+    text-align: left;
+    margin-top: 20px;
+    background-color: rgb(32, 28, 24); /* Background color for total price */
+    padding: 10px 20px; /* Padding: 10px top/bottom, 20px left/right */
+    border-radius: 4px; /* Adding rounded corners */
+    margin-bottom: 20px;
+
+}
+
+.total-price h2 {
+    margin: 0;
+    color: whitesmoke;
+}
+
+.total-price span {
+    font-weight: bold;
+    color: rgb(160, 147, 134); /* Text color for total price */
+}
+
+.item-details p{
+    font-family: 'Times New Roman', Times, serif;
+}

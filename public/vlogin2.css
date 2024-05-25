@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(160, 147, 134);
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.header {
+    background-color: rgb(32, 28, 24);
+    color: rgb(223, 212, 212);
+    padding: 20px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav a {
+    font-family: fantasy;
+    color: rgb(160, 147, 134);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.search-container {
+    text-align: left;
+    padding: 1px;
+}
+
+.search-bar {
+    margin-left: 245px;
+    width: 45%;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 2px;
+}
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(160, 147, 134);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    width: 80%; /* Adjust the width as needed */
+    max-width: 400px; /* Limiting the maximum width */
+    position: relative;
+    margin: 6% auto;    
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px; /* Adjusted padding */
+    box-shadow: 0 0 20px 9px rgba(32, 28, 24, 0.429);
+}
+
+
+.button-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Added margin to separate buttons from forms */
+}
+
+.forgot-password {
+    font-weight: 600;
+    display: block; /* Ensure the link is displayed as a block element */
+    text-align: left; /* Align the link to the right */
+    margin-top:10px; /* Add some space between the password field and the link */
+    color: rgb(62, 42, 22); /* Change color as needed */
+    text-decoration: none; /* Remove underline */
+    font-size: 14px; /* Adjust font size */
+    margin-bottom: 15px;
+    margin-left: 2px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline; /* Underline the link on hover */
+}
+
+.bordered {
+    border: 2px solid #ccc; /* Define the border style */
+    padding: 20px; /* Add padding to make the border visible */
+    border-radius: 10px; /* Add border-radius for better appearance */
+}
+
+
+.toggle-btn {
+    padding: 10px 0;
+    width: 45%; /* Equal width for both buttons */
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    text-align: center; /* Centering text */
+    border-radius: 5px; /* Add a slight border-radius */
+    font-weight: 600;
+    border: 1px groove black;
+}
+
+.toggle-btn.active {
+    font-weight: 600;
+    background: rgb(72, 57, 43);
+    color: white;
+    /* Removed border-radius for active button */
+}
+
+
+
+.input-group {
+    padding: 20px;
+}
+
+/*.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}*/
+
+.input-field {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.check-box {
+    margin-right: 5px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(72, 57, 43);
+    color: white;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: rgb(32, 28, 24);
+}
+
+#signupmargintop{
+    margin-top: 12px;
+}
+
+.footer {
+    background-color: rgb(32, 28, 24);
+    color: rgb(223, 212, 212);
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section.contact {
+    flex: 1 1 250px;
+    margin-left: 160px; /* Add margin-left to create space from the left */
+    margin-right: 140px;
+}
+
+.footer-section.follow-us h4 {
+    margin-left: 15px;
+}
+
+.footer-section.follow-us .social-icons {
+    text-align: left;
+}
+
+.footer-section.follow-us .social-icons li {
+    display: inline-block; /* Make list items block-level elements */
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+.footer-section.follow-us .social-icons li img {
+    width: 30px; /* Adjust the width of the icons as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+.footer-section p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: rgb(223, 212, 212);
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}

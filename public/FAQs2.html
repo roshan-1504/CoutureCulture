@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="FAQs2.css">
+</head>
+
+<body>
+    <div class="header">
+        <ul class="nav">
+            <!--
+            <li>
+                <input type="text" class="search-bar" placeholder="Search for your wardrobe essentials here">
+            </li> 
+        -->
+            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html#about" onclick="scrollToAbout()">About</a></li>
+        </ul>
+    </div>
+  <div class="container">
+    <h1 class="mt-5 mb-4" style="font-family: fantasy;">Frequently Asked Questions</h1>
+    <div id="accordion">
+      <!-- FAQ content will be inserted here dynamically -->
+    </div>
+  </div>
+
+</div>
+<div class="footer">
+  <div class="footer-content">
+      <div class="footer-section contact">
+          <h4>Contact Us</h4>
+          <p>Email:<a href="mailto:info@coutureculture.com" style="color:rgb(160, 147, 134);">info@coutureculture.com</a><br>Phone: 123-456-7890</p>
+      </div>
+      <!-- <div class="footer-section follow-us">
+          <h4>Follow Us</h4>
+          <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+          </ul>
+      </div> -->
+
+      <div class="footer-section follow-us">
+          <h4>Follow Us</h4>
+          <ul class="social-icons">
+              <li><a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a></li>
+              <li><a href="https://www.instagram.com"><img src="instagram.png" alt="Instagram"></a></li>
+              <li><a href="https://www.twitter.com"><img src="twitter.png" alt="Twitter"></a></li>
+          </ul>
+      </div>
+      
+      <div class="footer-section newsletter">
+          <h4>Subscribe to Our Newsletter</h4>
+          <form action="#" method="post">
+              <input type="email" name="email" placeholder="Enter your email">
+              <button type="submit" style="margin-top: 10px;background-color: rgb(160, 147, 134);">Subscribe</button>
+          </form>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      &copy; 2024 Couture Culture. All rights reserved.
+  </div>
+</div>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // JSON data representing the FAQ items
+    var faqData = [
+      {
+        "question": "Do I need to create an account in order to shop?",
+        "answer": "Yes, you would require an account in our platform to order the products."
+      },
+      {
+        "question": "How do I create an account?",
+        "answer": "Go to the Couture Culture Page, where you can find 'Get Started' button, by clicking on it, you'll find the login/signup menu."
+      },
+      {
+        "question": "How do I create an account?",
+        "answer": "Click on the 'Get Started' button, which will redirect you to login/signup page, you can fill the details and create an account over there."
+      },
+      {
+        "question": "I have problems adding items to my shopping cart",
+        "answer": "Kindly contact our customer care executive from 9 AM to 9 PM on all days or email us on info@coutureculture.com"
+      },
+
+      {
+        "question": "Do I need to create an account in order to shop?",
+        "answer": "Yes, you would require an account in our platform to order the products."
+      },
+      {
+        "question": "How do I create an account?",
+        "answer": "Go to the Couture Culture Page, where you can find 'Get Started' button, by clicking on it, you'll find the login/signup menu."
+      },
+      {
+        "question": "How do I create an account?",
+        "answer": "Click on the 'Get Started' button, which will redirect you to login/signup page, you can fill the details and create an account over there."
+      },
+      {
+        "question": "I have problems adding items to my shopping cart",
+        "answer": "Kindly contact our customer care executive from 9 AM to 9 PM on all days or email us on info@coutureculture.com"
+      }
+      // Add more FAQ items here if needed
+    ];
+
+    // Function to dynamically generate HTML for FAQs from JSON data
+    function generateFAQs() {
+      var accordion = document.getElementById("accordion");
+      faqData.forEach(function(item, index) {
+        var card = document.createElement("div");
+        card.className = "card";
+        accordion.appendChild(card);
+
+        var cardHeader = document.createElement("div");
+        cardHeader.className = "card-header";
+        cardHeader.id = "heading" + (index + 1);
+        card.appendChild(cardHeader);
+
+        var questionBtn = document.createElement("button");
+        questionBtn.className = "btn btn-link btn-custom-outline";
+        questionBtn.setAttribute("data-toggle", "collapse");
+        questionBtn.setAttribute("data-target", "#collapse" + (index + 1));
+        questionBtn.setAttribute("aria-expanded", "false");
+        questionBtn.setAttribute("aria-controls", "collapse" + (index + 1));
+        questionBtn.textContent = item.question;
+        cardHeader.appendChild(questionBtn);
+
+        var collapseDiv = document.createElement("div");
+        collapseDiv.id = "collapse" + (index + 1);
+        collapseDiv.className = "collapse";
+        collapseDiv.setAttribute("aria-labelledby", "heading" + (index + 1));
+        collapseDiv.setAttribute("data-parent", "#accordion");
+        card.appendChild(collapseDiv);
+
+        var cardBody = document.createElement("div");
+        cardBody.className = "card-body";
+        cardBody.textContent = item.answer;
+        collapseDiv.appendChild(cardBody);
+      });
+    }
+
+    // Call the function to generate FAQs on page load
+    window.onload = function() {
+      generateFAQs();
+    };
+  </script>
+  <script>
+      function scrollToAbout() {
+        var aboutSection = document.getElementById('about');
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+      }
+  </script>
+</body>
+</html>

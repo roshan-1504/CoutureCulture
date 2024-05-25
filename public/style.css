@@ -1,0 +1,395 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(160, 147, 134);
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+    margin: 50pt 50pt;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.header {
+    background-color: rgb(32, 28, 24);
+    color: rgb(223, 212, 212);
+    padding: 5px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav a {
+    font-family: fantasy;
+    color: rgb(160, 147, 134);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.search-container {
+    text-align: left;
+    padding: 1px;
+}
+
+.search-bar {
+    margin-left: 170px;
+    width: 45%;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 2px;
+}
+
+/*.search-button {
+    background-color: rgb(98, 82, 67);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 80px;
+}*/
+
+
+/*.discounttop{
+    margin-top: 20px;
+    width: 100%;}*/
+
+.discounttop {
+    margin-left: 4.3%;
+    margin-top: 20px;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    align-items: center;
+    border-radius: 10px;
+}
+    
+
+.content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.text-field {
+    font-size: large;
+    flex: 1 1 auto;
+    padding: 5px;
+    line-height: 0.2;   
+    min-width: 200px;
+}
+
+p {
+    font-family: 'Apple Chancery', cursive;
+}
+
+.welcome {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.tag {
+    margin-top: 20px;
+    line-height: 0.2;
+}
+
+.image {
+    flex: 1;
+    width: 100%;
+    text-align:right;
+    min-width: 200px;
+}
+
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+/*.footer {
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(32, 28, 24);
+    color: rgb(223, 212, 212);
+    text-align: center;
+    padding: 20px;
+    font-family: fantasy;
+}*/
+
+.footer {
+    background-color: rgb(32, 28, 24);
+    color: rgb(223, 212, 212);
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section.contact {
+    flex: 1 1 250px;
+    margin-left: 160px; /* Add margin-left to create space from the left */
+    margin-right: 140px;
+}
+
+.footer-section.follow-us h4 {
+    margin-left: 15px;
+}
+
+.footer-section.follow-us .social-icons {
+    text-align: left;
+}
+
+.footer-section.follow-us .social-icons li {
+    display: inline-block; /* Make list items block-level elements */
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+.footer-section.follow-us .social-icons li img {
+    width: 30px; /* Adjust the width of the icons as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+.footer-section p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: rgb(223, 212, 212);
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.title {
+    font-weight: 700;
+    font-size: 48px;
+    font-family: Impact, fantasy;
+    color: rgb(32, 28, 24);
+}
+
+.get-started-button {
+    background-color: rgb(32, 28, 24);
+    color: rgb(223, 212, 212);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 40px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: calc(20% - 10px); /* Adjust card width */
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.card:last-child {
+    margin-right: 0; /* Remove margin from the last card to prevent overflow */
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cardcontainerjs {
+    margin-top: 0;
+    padding:1px;
+    text-align: center;
+
+}
+
+.cardcontainerjs h4{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    max-height: 3em; /* (2 lines * font-size) + ellipsis */
+    text-overflow: ellipsis;
+    padding-right:10px; /* Adjust as needed */
+    padding-left: 10px;
+}
+
+.cardcontainerjs p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cardcontainerjs priceClass{
+    font-size: medium;
+    font-weight: 500;
+    font-family:fantasy;
+}
+
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Optional: Add styles for previous and next buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    z-index: 1000;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+.indicator-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.indicator {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 5px;
+    background-color: #717171;;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active {
+    background-color: #bbb;
+}
+
+
+/* Add this code at the end of your CSS */
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+    .nav {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .nav li {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .search-bar {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .header {
+        padding-left: 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 0 auto 20px;
+    }
+
+    .footer-section.contact {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .discounttop {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+
+    .container {
+        margin: 20px;
+    }
+
+    .card {
+        width: calc(50% - 10px);
+    }
+}
+
+/* You can add more media queries for different screen sizes if needed */

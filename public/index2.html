@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-o6Zqm3+PMy16DW8JyXSdcrMXE2s/wIQ6sF+oaJ2ZdPHjx0ss/xEkQ8lqpx+45GTSGRcVH03ZINwmeNwORXqD8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Couture Culture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <div class="header">
+        <ul class="nav">
+            <!--
+            <li>
+                <input type="text" class="search-bar" placeholder="Search for your wardrobe essentials here">
+            </li> 
+        -->
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#about">Contact Us</a></li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <div class="content">
+            <div class="text-field">
+                <h2 class="welcome">Welcome to</h2>
+                <h2 class="title">Couture Culture</h2>
+                <p class="tag">Elevate Your Wardrobe, Embrace Your Confidence.</p>
+                <button class="get-started-button" id="getStartedButton">Get Started</button>
+            </div>
+            <div class="image">
+                <img src="image.jpg" alt="Clothing Store">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="about-section" id="about">
+        <h1>About Us</h1>
+        <p>Welcome to Couture Culture, where fashion meets sophistication. We strive to provide our customers with the latest trends in clothing, ensuring that each piece exudes elegance and style.</p>
+        <p>At Couture Culture, we believe that clothing is more than just fabric – it's a form of self-expression. <br>That's why we curate our collections to cater to diverse tastes and personalities, empowering individuals to embrace their unique sense of style.</p>
+        <p>Our team is passionate about fashion and dedicated to delivering exceptional customer service.<br> Whether you're looking for a statement piece for a special occasion or everyday essentials to elevate your wardrobe, we've got you covered.</p>
+        <p>Join us on a journey through the world of fashion and discover the perfect pieces to enhance your personal style. Thank you for choosing Couture Culture – where every outfit tells a story.</p>
+    </div>
+    
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@coutureculture.com<br>Phone: 123-456-7890</p>
+            </div>
+            <!-- <div class="footer-section follow-us">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div> -->
+
+            <div class="footer-section follow-us">
+                <h4>Follow Us</h4>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com"><img src="instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.twitter.com"><img src="twitter.png" alt="Twitter"></a></li>
+                </ul>
+            </div>
+            
+            
+            
+
+            <div class="footer-section newsletter">
+                <h4>Subscribe to Our Newsletter</h4>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 Couture Culture. All rights reserved.
+        </div>
+    </div>
+    
+    
+    <script>
+        $(document).ready(function() {
+            // Event handler for Get Started button
+            $("#getStartedButton").click(function() {
+                window.location.href = "v2.html"; // Redirect to login page
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Smooth scroll for anchor links
+            $('a[href^="#"]').on('click', function(event) {
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

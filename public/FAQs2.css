@@ -1,0 +1,142 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: rgb(32, 28, 24);
+    color: rgb(223, 212, 212);
+    padding: 20px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 90%;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav a {
+    font-family: fantasy;
+    color: rgb(160, 147, 134);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.btn-custom-outline {
+    outline: 2px solid rgb(160, 147, 134) !important; /* Adjust the outline color and width as needed */
+    color: rgb(160, 147, 134) !important; /* Change the text color of the button */
+}
+
+body {
+    flex: 1; 
+    background-color: rgb(160, 147, 134);
+    margin-bottom: 100px;
+}
+
+
+.container{
+    margin-bottom: 5%;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 0;
+    background-color: rgb(32, 28, 24);
+    color: rgb(223, 212, 212);
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section.contact {
+    flex: 1 1 250px;
+    margin-left: 160px; /* Add margin-left to create space from the left */
+    margin-right: 140px;
+}
+
+.footer-section.follow-us h4 {
+    margin-left: 15px;
+}
+
+.footer-section.follow-us .social-icons {
+    text-align: left;
+}
+
+.footer-section.follow-us .social-icons li {
+    display: inline-block; /* Make list items block-level elements */
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+.footer-section.follow-us .social-icons li img {
+    width: 30px; /* Adjust the width of the icons as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.footer-section p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: rgb(223, 212, 212);
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-header {
+    background-color: rgb(32, 28, 24); /* Change background color of question */
+    color: rgb(160, 147, 134); /* Change text color of question */
+}
+
+.card-body {
+    background-color: rgb(228, 217, 217); /* Change background color of answer */
+    color: rgb(32, 28, 24); /* Change text color of answer */
+    border-top: 1px solid rgb(160, 147, 134); /* Add border between question and answer */
+    padding: 15px; /* Add some padding to the answer */
+}

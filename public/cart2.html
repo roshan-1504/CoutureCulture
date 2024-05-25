@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" type="text/css" href="cart2.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <ul class="nav">
+            <li><a href="index.html">Couture Culture</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li>
+                <input type="text" class="search-bar" placeholder="Search for your wardrobe essentials here">
+                <!--<button class="search-button">Search</button> -->
+            </li>
+
+            <li><a href="home.html">Home</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </div>
+    <div class="heading">
+        <h1>My Cart</h1>
+    </div>
+
+    <div class="cart-container">
+        <div class="cart-items">
+            <!-- JavaScript will populate this section with cart items -->
+        </div>
+
+        <div class="total-price">
+            <h2>Total Price: <span id="totalPrice">0</span></h2>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section contact">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:info@coutureculture.com" style="color:rgb(160, 147, 134);">info@coutureculture.com</a><br>Phone: 123-456-7890</p>
+            </div>
+
+            <div class="footer-section follow-us">
+                <h4>Follow Us</h4>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com"><img src="instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.twitter.com"><img src="twitter.png" alt="Twitter"></a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section newsletter">
+                <h4>Subscribe to Our Newsletter</h4>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <button type="submit" style="background-color: rgb(160, 147, 134);">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Couture Culture. All rights reserved.
+        </div>
+    </div>
+
+    <script src="cart2.js"></script>
+</body>
+</html>

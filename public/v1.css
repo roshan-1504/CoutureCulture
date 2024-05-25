@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(160, 147, 134);
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.header {
+    background-color: rgb(32, 28, 24);
+    color: rgb(223, 212, 212);
+    padding: 20px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav a {
+    font-family: fantasy;
+    color: rgb(160, 147, 134);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(160, 147, 134);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form-box {
+    width: 380px;
+    height: auto;
+    min-height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow-x: hidden;
+    border-radius: 10px;
+}
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 2px 2px rgb(32, 28, 24);
+    border-radius: 10px;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: rgb(160, 147, 134);
+    color: white;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.input-group {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field {
+    width: 95%;
+    padding: 8px;
+    margin: 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: rgb(160, 147, 134);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.check-box {
+    margin: 30px 10px 30px 0;
+}
+
+span {
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+
+#login{
+    left: 50px;
+}
+
+#register{
+    left: 450px;
+    margin-top: 0;
+}
+
+.forgot-password {
+
+    font-weight: 600;
+    display: block; /* Ensure the link is displayed as a block element */
+    text-align: left; /* Align the link to the right */
+    margin-top: 15px; /* Add some space between the password field and the link */
+    color: rgb(32, 28, 24); /* Change color as needed */
+    text-decoration: none; /* Remove underline */
+    font-size: 14px; /* Adjust font size */
+    margin-bottom: 15px;
+    margin-left: 2px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline; /* Underline the link on hover */
+}
+
+
+.footer {
+    background-color: rgb(32, 28, 24);
+    color: rgb(223, 212, 212);
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1 1 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section.contact {
+    flex: 1 1 250px;
+    margin-left: 160px; /* Add margin-left to create space from the left */
+    margin-right: 140px;
+}
+
+.footer-section.follow-us h4 {
+    margin-left: 15px;
+}
+
+.footer-section.follow-us .social-icons {
+    text-align: left;
+}
+
+.footer-section.follow-us .social-icons li {
+    display: inline-block; /* Make list items block-level elements */
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+.footer-section.follow-us .social-icons li img {
+    width: 30px; /* Adjust the width of the icons as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+.footer-section p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: rgb(223, 212, 212);
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
